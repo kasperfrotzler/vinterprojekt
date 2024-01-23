@@ -55,11 +55,19 @@ public class Tamagochi {
     public void PrintStatus() {
         if (this.isAlive == true) {
             System.out.println("Din Tamagochi lever");
-            System.out.println("Din Tamagochis hunger är: " + this.hunger);
-            System.out.println("Din Tamagochis boredom är: " + this.boredom);
         } else {
             System.out.println("Din Tamagochi har dött");
         }
+    }
+
+    public int getHunger() {
+        System.out.println("Din Tamagochis hunger är: " + this.hunger);
+        return hunger;
+    }
+
+    public int getBoredom() {
+        System.out.println("Din Tamagochis boredom är: " + this.boredom);
+        return boredom;
     }
 
     public boolean GetAlive() {
