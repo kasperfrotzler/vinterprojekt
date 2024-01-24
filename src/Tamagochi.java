@@ -61,12 +61,11 @@ public class Tamagochi {
     }
 
     public int getHunger() {
-        System.out.println("Din Tamagochis hunger är: " + this.hunger);
         return hunger;
     }
 
+
     public int getBoredom() {
-        System.out.println("Din Tamagochis boredom är: " + this.boredom);
         return boredom;
     }
 
