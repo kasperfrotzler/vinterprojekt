@@ -1,12 +1,13 @@
 import java.util.Random;
 import java.util.ArrayList;
 
+
 public class Tamagochi {
     /*
     Attribut
      */
-    private int hunger;
-    private int boredom;
+    private int hunger = 3;
+    private int boredom = 2;
     private boolean isAlive = true;
     private Random random = new Random();
     public String name;
@@ -35,7 +36,7 @@ public class Tamagochi {
         if (words.size() > 0) {
             System.out.println(words.get(random.nextInt(words.size())));
         } else {
-            System.out.println("Din Tamagochi har inte lärt sig några ord");
+            System.out.println("Din Tamagochi har inte lärt sig några ord än");
         }
     }
 
@@ -55,6 +56,7 @@ public class Tamagochi {
     public void PrintStatus() {
         if (this.isAlive == true) {
             System.out.println("Din Tamagochi lever");
+
         } else {
             System.out.println("Din Tamagochi har dött");
         }
