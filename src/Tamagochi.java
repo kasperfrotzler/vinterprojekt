@@ -8,6 +8,7 @@ public class Tamagochi {
      */
     private int hunger = 3;
     private int boredom = 2;
+    private int thirst = 0;
     private boolean isAlive = true;
     private Random random = new Random();
     public String name;
@@ -48,7 +49,8 @@ public class Tamagochi {
     public void Tick() {
         this.hunger++;
         this.boredom++;
-        if (hunger > 12 || boredom > 12) {
+        this.thirst++;
+        if (hunger > 12 || boredom > 12 || thirst > 12) {
             isAlive = false;
         }
     }
@@ -64,6 +66,10 @@ public class Tamagochi {
 
     public int getHunger() {
         return hunger;
+    }
+
+    public int getThirst() {
+        return thirst;
     }
 
 
